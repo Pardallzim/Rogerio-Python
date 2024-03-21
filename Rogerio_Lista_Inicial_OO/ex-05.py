@@ -13,5 +13,26 @@ class Conta_corrente:
 
     def sacar(self):
         saque =float(input("Digite o valor do saque: "))
-        self.saldo_conta += saque
+        if saque <= self.saldo_conta:
+            self.saldo_conta -= saque
+        else:
+            print("!!!Saldo insuficiente!!!")
+    
+    def __str__(self):
+        return f"Eu sou o {self.nome_correntista} dono da conta {self.numero_conta} e  tenho R${self.saldo_conta} na conta."
 
+
+numero_conta =int(input("Digite o número da conta: "))
+nome =str(input("Digite o nome do correntista: "))
+saldo =float(input("Digite o saldo da conta: "))
+
+conta = Conta_corrente(numero_conta, nome, saldo)
+print(conta)
+conta.alterar_nome()
+print(conta)
+conta.depositar()
+print(conta)
+conta.sacar()
+print(conta)
+conta.sacar()
+print(conta)
