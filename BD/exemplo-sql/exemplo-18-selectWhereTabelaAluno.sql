@@ -1,0 +1,3 @@
+SELECT *
+	FROM `Aluno`
+WHERE `CEP` = '36680000';

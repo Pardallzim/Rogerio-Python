@@ -1,0 +1,2 @@
+ALTER TABLE `Turma`
+	ADD COLUMN `Sala` INT;

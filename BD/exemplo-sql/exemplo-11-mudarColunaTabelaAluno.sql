@@ -1,0 +1,2 @@
+ALTER TABLE `Aluno`
+	CHANGE COLUMN `Estado` `UF` CHAR(2);
