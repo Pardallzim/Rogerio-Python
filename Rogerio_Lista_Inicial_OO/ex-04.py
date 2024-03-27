@@ -12,7 +12,7 @@ class Pessoa:
 
     def crescer(self)->None:
         if self._idade < 21:
-            self.altura += 0.05
+            self.altura += 0.04
         else:
             pass    
 
@@ -25,9 +25,21 @@ class Pessoa:
     def __str__(self):
         return f"Eu sou o {self.nome} tenho {self._idade} com {self.__peso}Kg e {self.altura}M."
 
-pessoa = Pessoa("Rogério",19,78.65,1.72)     
+rogerio = Pessoa("Rogério",16,78.65,1.72)     
 print(rogerio)  
 rogerio.envelhecer() 
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
+rogerio.envelhecer()
 rogerio.envelhecer()
 rogerio.envelhecer()
 rogerio.envelhecer()

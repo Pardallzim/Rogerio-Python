@@ -4,61 +4,40 @@ class TV:
         self.numero_canal = numero_canal
         self.volume = volume
 
-    def trocar_canal(self):
-        self.numero_canal = self.numero_canal + 1
+    def trocar_canal(self, novo_canal):
+        self.numero_canal = novo_canal
         return self.numero_canal
 
-    def aumentar_volume(self):
-        self.volume = int(input("Aumentar volume até: "))
-        if self.volume > 99 or self.volume < 0:
-            print("inválido")
-
-    def diminuir_volume(self):
-        self.volume = int(input("Diminuir volume até: "))
-        if self.volume > 99 or self.volume < 0:
+    def aumentar_volume(self, aumentar):
+        if aumentar < self.volume:
             print("inválido")
         else:
-            print(f"Volume da TV é:{self.volume}")
+            self.volume = aumentar
+            return f"Volume da TV é:{self.volume}"
+
+    def diminuir_volume(self,diminuir):
+        if diminuir > self.volume:
+            print("inválido")
+        else:
+            self.volume = diminuir
+            return f"Volume da TV é:{self.volume}"
     
     def retornar_canal(self):
         return self.numero_canal
+    
+    def retornar_volume(self):
+        return self.volume
 
 tv = TV(1, 0)
 print("canal ", tv.retornar_canal())
 print("Volume da TV: ", tv.retornar_volume())
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-tv.trocar_canal()
-print(tv.trocar_canal())
+novo_canal = int(input("Digite o número do canal: "))
+print(tv.trocar_canal(novo_canal))
 print("canal ", tv.retornar_canal())
-tv.aumentar_volume()
 print("Volume da TV: ", tv.retornar_volume())
-tv.diminuir_volume()
+aumentar = int(input("Digite o numero para aumentar o volume: "))
+tv.aumentar_volume(aumentar)
+print("Volume da TV: ", tv.retornar_volume())
+dimiuir = int(input("Digite o numero para diminuir o volume: "))
+tv.diminuir_volume(dimiuir)
 print("Volume da TV: ", tv.retornar_volume())

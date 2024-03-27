@@ -3,12 +3,12 @@ class Retangulo:
         self.comprimento = comprimento
         self.largura = largura
 
-    def mudar_lado(self):
-        self.comprimento =float(input("Digite o novo tamanho do comprimento: "))
-        self.largura =float(input("Digite o novo tamanho do largura: "))
+    def mudar_lado(self, novo_comprimento, nova_largura):
+        self.comprimento = novo_comprimento
+        self.largura = nova_largura
 
     def mostrar_lados(self):
-        print(f"O comprimento é: {self.comprimento} e a largura é: {self.largura}")
+        return f"O comprimento é: {self.comprimento} e a largura é: {self.largura}"
 
     def calcular_area(self):
         return self.comprimento * self.largura

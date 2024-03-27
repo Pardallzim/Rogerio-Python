@@ -4,15 +4,13 @@ class Conta_corrente:
         self.nome_correntista = nome_correntista
         self.saldo_conta = saldo_conta
 
-    def alterar_nome(self):
-        self.nome_correntista =str(input("Digite o Nome do Correntista: "))
+    def alterar_nome(self, novo_nome):
+        self.nome_correntista = novo_nome
     
-    def depositar(self):
-        deposito =float(input("Digite o valor do deposito: "))
+    def depositar(self, deposito):
         self.saldo_conta += deposito
 
-    def sacar(self):
-        saque =float(input("Digite o valor do saque: "))
+    def sacar(self, saque):
         if saque <= self.saldo_conta:
             self.saldo_conta -= saque
         else:
@@ -28,11 +26,15 @@ saldo =float(input("Digite o saldo da conta: "))
 
 conta = Conta_corrente(numero_conta, nome, saldo)
 print(conta)
-conta.alterar_nome()
+novo_nome =str(input("Digite o Nome do Correntista: "))
+conta.alterar_nome(novo_nome)
 print(conta)
-conta.depositar()
+deposito =float(input("Digite o valor do deposito: "))
+conta.depositar(deposito)
 print(conta)
-conta.sacar()
+saque =float(input("Digite o valor do saque: "))
+conta.sacar(saque)
 print(conta)
-conta.sacar()
+saque2 =float(input("Digite o valor do saque: "))
+conta.sacar(saque2)
 print(conta)
