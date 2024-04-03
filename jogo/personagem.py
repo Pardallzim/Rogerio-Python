@@ -1,19 +1,21 @@
 import random
 import os
 from definicao_atributos import Definicao_Atributos 
-class Character:
+from raca import Raca
+class Character(Raca):
     def __init__(self, nome:str, raca:str) -> None:
+        super().__init__()
         self.nome = nome
         self.raca = raca
-        self.__strength = random.randint(0,21) 
-        self.__dexterity = random.randint(0,21)
-        self.__constitution = random.randint(0,21)
-        self.__wisdom = random.randint(0,21)
-        self.__intelligence = random.randint(0,21)
-        self.__charisma = random.randint(0,21)
+        self.__strength = random.randint(0,21) + self.raca_strength
+        self.__dexterity = random.randint(0,21) + self.raca_dexterity
+        self.__constitution = random.randint(0,21) + self.raca_constitution
+        self.__wisdom = random.randint(0,21) + self.raca_wisdom
+        self.__intelligence = random.randint(0,21) + self.raca_intelligence
+        self.__charisma = random.randint(0,21) + self.raca_charisma
 
     def __str__(self) -> str:
-        return f"Nome : {self.nome} \nRaça : {self.raca} \nForça : {self.__strength}\nDestreza : {self.__dexterity}\nConstituição : {self.__constitution}\nSabedoria : {self.__wisdom}\nInteligencia : {self.__intelligence}\nCarisma : {self.__charisma}\n"
+        return f"Status da Raça :\nForça : {self.raca_strength}\nDestreza : {self.raca_dexterity}\nConstituição : {self.raca_constitution}\nSabedoria : {self.raca_wisdom}\nInteligencia : {self.raca_intelligence}\nCarisma : {self.raca_charisma}\n\n\nNome : {self.nome} \nRaça : {self.raca} \nForça : {self.__strength}\nDestreza : {self.__dexterity}\nConstituição : {self.__constitution}\nSabedoria : {self.__wisdom}\nInteligencia : {self.__intelligence}\nCarisma : {self.__charisma}\n"
 
 nome_personagem=str(input("Digite o nome do seu personagem: "))
 teste_nome = True
@@ -103,10 +105,8 @@ while teste_raca2:
             raca_personagem=int(input("Digite o número da a Sub-Raça do seu personagem: "))
             if raca_personagem == 11:
                 raca_personagem = "Hill Dwarf"
-                teste_raca1 = False
             elif raca_personagem == 12:
                 raca_personagem = "Mountain Dwarf"
-                teste_raca1 = False
             else:
                 print("Número digitado INCORRETO")
         elif raca_personagem == 2:
@@ -114,13 +114,10 @@ while teste_raca2:
             raca_personagem=int(input("Digite o número da a Sub-Raça do seu personagem: "))
             if raca_personagem == 21:
                 raca_personagem = "High Elf"
-                teste_raca1 = False
             elif raca_personagem == 22:
                 raca_personagem = "Wood Elf"
-                teste_raca1 = False
             elif raca_personagem == 23:
                 raca_personagem = "Dark Elf 'Drow'"
-                teste_raca1 = False
             else:
                 print("Número digitado INCORRETO")
         elif raca_personagem == 3:
@@ -128,32 +125,25 @@ while teste_raca2:
             raca_personagem=int(input("Digite o número da a Sub-Raça do seu personagem: "))
             if raca_personagem == 31:
                 raca_personagem = "Lightfoot"
-                teste_raca1 = False
             elif raca_personagem == 32:
                 raca_personagem = "Stout"
-                teste_raca1 = False
             else:
                 print("Número digitado INCORRETO")
         elif raca_personagem == 4:
             raca_personagem = "Human"
-            teste_raca1 = False
         elif raca_personagem == 5:
             raca_personagem = "Dragonborn"
-            teste_raca1 = False
         elif raca_personagem == 6:
             print("Parece que sua raça tem uma Sub-Raça, escolha uma Sub-Raça\n61 - Forest Gnome\n62 - Rock Gnome")
             raca_personagem=int(input("Digite o número da a Sub-Raça do seu personagem: "))
             if raca_personagem == 61:
                 raca_personagem = "Forest Gnome"
-                teste_raca1 = False
             elif raca_personagem == 62:
                 raca_personagem = "Rock Gnome"
-                teste_raca1 = False
             else:
                 print("Número digitado INCORRETO")
         elif raca_personagem == 7:
             raca_personagem = "Tiefling"
-            teste_raca1 = False
         else:
             print("Número digitado INCORRETO Digite o Número novamente")
 

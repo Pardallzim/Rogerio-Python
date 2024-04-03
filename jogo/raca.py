@@ -96,6 +96,3 @@ class Raca_Tiefling(Raca):
         super().__init__()
         self.raca_intelligence = 1
         self.raca_charisma = 2
-
-x = Raca_Dark_Elf()
-print(x)
