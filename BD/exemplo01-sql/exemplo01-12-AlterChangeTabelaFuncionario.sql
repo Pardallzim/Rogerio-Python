@@ -1,2 +1,0 @@
-ALTER TABLE `funcionario`
-	CHANGE COLUMN `Estado` `UF` VARCHAR(2) NOT NULL;

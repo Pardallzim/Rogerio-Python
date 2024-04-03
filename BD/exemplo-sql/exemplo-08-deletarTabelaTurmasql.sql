@@ -1,2 +1,0 @@
-ALTER TABLE `Turma`
-	DROP COLUMN `Tipo`;
