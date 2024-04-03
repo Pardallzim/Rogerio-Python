@@ -10,53 +10,53 @@ class Definicao_Atributos:
 
     def name_definition(self, name:str):
         if name == "strength":
-            self.desc01 = 
-            self.desc02 = 
-            self.desc03 = 
-            self.desc04 = 
-            self.desc05 = 
-            self.desc06 = 
-            self.desc07 = 
+            self.desc01 = "Incorpóreo"
+            self.desc02 = "Incapaz"
+            self.desc03 = "Fraco"
+            self.desc04 = "Mediano"
+            self.desc05 = "Forte"
+            self.desc06 = "Super Poderoso"
+            self.desc07 = "Imbatível"
         elif name == "dexterity":
-            self.desc01 = 
-            self.desc02 = 
-            self.desc03 = 
-            self.desc04 = 
-            self.desc05 = 
-            self.desc06 = 
-            self.desc07 = 
+            self.desc01 = "Desacordado"
+            self.desc02 = "Abatido"
+            self.desc03 = "Desajeitado"
+            self.desc04 = "Regular"
+            self.desc05 = "Ágil"
+            self.desc06 = "Ninja"
+            self.desc07 = "Imperceptível"
         elif name == "constitution":
-            self.desc01 = 
-            self.desc02 = 
-            self.desc03 = 
-            self.desc04 = 
-            self.desc05 = 
-            self.desc06 = 
-            self.desc07 = 
+            self.desc01 = "Espectro"
+            self.desc02 = "Enfermo"
+            self.desc03 = "Frágil"
+            self.desc04 = "Saudável"
+            self.desc05 = "Durão"
+            self.desc06 = "Super Resisténte"
+            self.desc07 = "Imortal"
         elif name == "wisdom":
-            self.desc01 = 
-            self.desc02 = 
-            self.desc03 = 
-            self.desc04 = 
-            self.desc05 = 
-            self.desc06 = 
-            self.desc07 = 
+            self.desc01 = "Inconsciente"
+            self.desc02 = "Irracional"
+            self.desc03 = "Desatento"
+            self.desc04 = "Simples"
+            self.desc05 = "Perspicaz"
+            self.desc06 = "Filósofo"
+            self.desc07 = "Iluminado"
         elif name == "intelligence":
-            self.desc01 = 
-            self.desc02 = 
-            self.desc03 = 
-            self.desc04 = 
-            self.desc05 = 
-            self.desc06 = 
-            self.desc07 = 
+            self.desc01 = "Inanimado"
+            self.desc02 = "Incivilizado"
+            self.desc03 = "Parvo"
+            self.desc04 = "Medíocre"
+            self.desc05 = "Estudado"
+            self.desc06 = "Gênio"
+            self.desc07 = "Onisciente"
         elif name == "charisma":
-            self.desc01 = 
-            self.desc02 = 
-            self.desc03 = 
-            self.desc04 = 
-            self.desc05 = 
-            self.desc06 = 
-            self.desc07 = 
+            self.desc01 = "Aberração"
+            self.desc02 = "Inexpressivo"
+            self.desc03 = "Rude"
+            self.desc04 = "Sociável"
+            self.desc05 = "Persuasivo"
+            self.desc06 = "Influente"
+            self.desc07 = "Ídolo"
         else:
             pass
         
