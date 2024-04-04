@@ -1,4 +1,4 @@
-class Raca:
+class Raca():
     def __init__(self) -> None:
         self.raca_strength = 0
         self.raca_dexterity = 0
@@ -8,7 +8,7 @@ class Raca:
         self.raca_charisma = 0
 
     def __str__(self) -> str:
-        return f"Status da Raça :\nForça : {self.raca_strength}\nDestreza : {self.raca_dexterity}\nConstituição : {self.raca_constitution}\nSabedoria : {self.raca_wisdom}\nInteligencia : {self.raca_intelligence}\nCarisma : {self.raca_charisma}\n"
+        return f"\n\n\nStatus da Raça :\nForça : {self.raca_strength}\nDestreza : {self.raca_dexterity}\nConstituição : {self.raca_constitution}\nSabedoria : {self.raca_wisdom}\nInteligencia : {self.raca_intelligence}\nCarisma : {self.raca_charisma}\n"
 
 class Raca_Dwarf(Raca):
     def __init__(self) -> None:
