@@ -26,8 +26,12 @@ class TestCalculadora(unittest.TestCase):
         self.calc = Calculadora()
 
     def teste_soma(self):
-        self.assertEqual(self.calc.soma(2,4), 6)
+        self.assertEqual(self.calc.soma(1,3), 4)
         self.assertEqual(self.calc.soma(300,400), 700)
+
+    def teste_subtracao(self):
+        self.assertEqual(self.calc.subtracao(5,4), 1)
+        self.assertNotEqual(self.calc.subtracao(5,2), 4)
 
 
 if __name__ == '__main__':
