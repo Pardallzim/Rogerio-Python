@@ -81,7 +81,7 @@ ENGINE = InnoDB;
 -- Table `mydb`.`matriculas`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `mydb`.`matriculas` (
-  `idmatriculas` INT NOT NULL,
+  `idmatriculas` INT NOT NULL AUTO_INCREMENT,
   `turmas_idturmas` INT NOT NULL,
   `alunos_idalunos` INT NOT NULL,
   `mensalidade` DECIMAL(10,2) NOT NULL,

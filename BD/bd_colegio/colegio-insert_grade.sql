@@ -1,0 +1,20 @@
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (1,1);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (2,1);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (3,1);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (4,1);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (1,2);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (2,2);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (3,2);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (4,2);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (2,3);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (3,3);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (4,3);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (2,4);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (4,4);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (1,5);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (2,5);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (1,6);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (2,6);
+INSERT INTO `grade` (`turmas_idturmas`,`materias_idmaterias`) VALUE (3,6);
+
+SELECT * FROM `grade`;
