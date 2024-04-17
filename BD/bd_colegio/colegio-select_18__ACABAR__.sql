@@ -5,3 +5,9 @@ INNER JOIN `matriculas`
 INNER JOIN `turmas`
 		ON `turmas`.`idturmas` = `matriculas`.`turmas_idturmas`
 INNER JOIN `grade`
+		ON `grade`.`turmas_idturmas` = `turmas`.`idturmas`
+INNER JOIN `professores`
+		ON `professores`.`materias_idmaterias` = `materias`.`idmaterias`
+INNER JOIN `materias`
+		ON `materias`.`idmaterias` = `grade`.`materias_idmaterias`
+ORDER BY `professores`.`nome`
