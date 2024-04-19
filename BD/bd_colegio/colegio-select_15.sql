@@ -8,4 +8,4 @@ INNER JOIN `grade`
 		ON `grade`.`turmas_idturmas` = `turmas`.`idturmas`
 INNER JOIN `materias`
 		ON `materias`.`idmaterias` = `grade`.`materias_idmaterias`
-ORDER BY `materias`.`idmaterias`, `alunos`.`nome`
+ORDER BY `materias`.`materia`, `alunos`.`nome`
