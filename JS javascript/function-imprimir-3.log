@@ -1,0 +1,17 @@
+imprimir = (texto,x = 1)=>{
+    str = ""
+    for(i = 1; i <= x; i++)
+        str = str + texto
+
+    console.log(str);
+}
+(texto,x = 1)=>{
+    str = ""
+    for(i = 1; i <= x; i++)
+        str = str + texto
+
+    console.log(str);
+}
+imprimir("teste 3 -",8)
+VM84:6 teste 3 -teste 3 -teste 3 -teste 3 -teste 3 -teste 3 -teste 3 -teste 3 -
+undefined

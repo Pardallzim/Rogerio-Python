@@ -1,0 +1,32 @@
+n = 6
+6
+for(ix = 1; ix <= 10; ix++){
+    console.log(n * ix);
+}
+VM367:2 6
+VM367:2 12
+VM367:2 18
+VM367:2 24
+VM367:2 30
+VM367:2 36
+VM367:2 42
+VM367:2 48
+VM367:2 54
+VM367:2 60
+undefined
+n = 10
+10
+for(ix = 1; ix <= 10; ix++){
+    console.log(n * ix);
+}
+VM382:2 10
+VM382:2 20
+VM382:2 30
+VM382:2 40
+VM382:2 50
+VM382:2 60
+VM382:2 70
+VM382:2 80
+VM382:2 90
+VM382:2 100
+undefined

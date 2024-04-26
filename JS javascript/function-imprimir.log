@@ -1,0 +1,17 @@
+function imprimir(texto,x) {
+    str = ""
+    if(x == undefined)
+        x = 1
+
+    for(i = 1; i <= x; i++)
+        str = str + texto
+
+    console.log(str);
+}
+undefined
+imprimir("teste 1 -")
+VM1174:9 teste 1 -
+undefined
+imprimir("teste 1 -",4)
+VM1174:9 teste 1 -teste 1 -teste 1 -teste 1 -
+undefined

@@ -1,0 +1,36 @@
+a = 5
+5
+switch (a){
+    case 1: console.log("Bloco 1"); break;
+    case 2: console.log("Bloco 2"); break;
+    case 3: console.log("Bloco 3"); break;
+    case 4: console.log("Bloco 4"); break;
+    case 5: console.log("Bloco 5"); break;
+    default: console.log("Bloco alternatvo"); break;
+}
+VM3639:6 Bloco 5
+undefined
+a = 2
+2
+switch (a){
+    case 1: console.log("Bloco 1"); break;
+    case 2: console.log("Bloco 2"); break;
+    case 3: console.log("Bloco 3"); break;
+    case 4: console.log("Bloco 4"); break;
+    case 5: console.log("Bloco 5"); break;
+    default: console.log("Bloco alternatvo"); break;
+}
+VM3652:3 Bloco 2
+undefined
+a = 9999
+9999
+switch (a){
+    case 1: console.log("Bloco 1"); break;
+    case 2: console.log("Bloco 2"); break;
+    case 3: console.log("Bloco 3"); break;
+    case 4: console.log("Bloco 4"); break;
+    case 5: console.log("Bloco 5"); break;
+    default: console.log("Bloco alternatvo"); break;
+}
+VM3671:7 Bloco alternatvo
+undefined

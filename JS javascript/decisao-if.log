@@ -1,0 +1,5 @@
+form_ok = true
+true
+if(form_ok) console.log("Dados serão enviados!")
+VM1857:1 Dados serão enviados
+undefined

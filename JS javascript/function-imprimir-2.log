@@ -1,0 +1,14 @@
+function imprimir(texto,x = 1){
+    str = ""
+    for(i = 1; i <= x; i++)
+        str = str + texto
+
+    console.log(str);
+}
+undefined
+imprimir("teste 2 -")
+VM56:6 teste 2 -
+undefined
+imprimir("teste 2 -",5)
+VM56:6 teste 2 -teste 2 -teste 2 -teste 2 -teste 2 -
+undefined

@@ -1,0 +1,33 @@
+peso = 8
+8
+if(peso <= 10){
+    console.log("Pode embarcar!")
+} else if (peso <= 23){
+    console.log("Deve despachar!")
+} else{
+    console.log("Será nescessário pagar o excesso!")
+}
+VM2463:2 Pode embarcar!
+undefined
+peso = 15
+15
+if(peso <= 10){
+    console.log("Pode embarcar!")
+} else if (peso <= 23){
+    console.log("Deve despachar!")
+} else{
+    console.log("Será nescessário pagar o excesso!")
+}
+VM2493:4 Deve despachar!
+undefined
+peso = 25
+25
+if(peso <= 10){
+    console.log("Pode embarcar!")
+} else if (peso <= 23){
+    console.log("Deve despachar!")
+} else{
+    console.log("Será nescessário pagar o excesso!")
+}
+VM2503:6 Será nescessário pagar o excesso!
+undefined
