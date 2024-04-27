@@ -1,0 +1,32 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Lucida Console", Roboto, cursive;
+}
+div{
+    width: 80%;
+    height: auto;
+    min-height: 80px;
+    text-align: center;
+    background-color: teal;
+    color: white;
+    margin: 10px auto;
+    padding: 5px;
+}
+input[type=button], [type=submit]{
+    background-color: #47817f;
+    border: 2px solid white;
+    font-family: "Lucida Console", Roboto, cursive;
+    color: white;
+    padding: 28px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+input[type=button]:hover, [type=submit]:hover{
+    background-color: #7f4d3e;
+}
+#p1{
+    visibility: hidden;
+}

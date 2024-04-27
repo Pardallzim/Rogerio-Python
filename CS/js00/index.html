@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS00 - introduçãoas JavaScript</title>
+    <!-- referência para arquivo js externo -->
+    <script src="./js/functions.js"></script>
+    <!-- script local no head -->
+    <script type ="text/javascript">
+        alert("Olá Mundo! mensagem gerada por javascript no <head>")
+    </script>
+</head>
+<body>
+    <h1>Introdução ao JavaScript</h1>
+    <input type="submit" onclick="mensagem()" name="msg" id="msg" value="mensagem">
+    <!-- script local - no body -->
+    <script>
+        alert("Mensagem gerada por javascript no <body>")
+    </script>
+</body>
+</html>
