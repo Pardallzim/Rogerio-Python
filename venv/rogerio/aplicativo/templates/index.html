@@ -1,0 +1,117 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+        <!--Background-->
+        <div class="imagem">
+            <div class="sombra">
+            </div>
+            <img src="{% static  'assets/img/certificado2.jpg' %}" alt="background" width="100%" height="100%">
+            <h1>Rogerio Silva
+                <br><br>
+                Futuro Engenheiro de Software e Desenvolvedor para web
+            </h1>
+        </div>
+        <!--Sobre-->
+        <div class="sobre gridconteiner marg0">
+            <div class="center griditens">
+                <img src="{% static  'assets/img/rogerio.jpg' %}" alt="Rogerio" width="400" height="400">
+            </div>
+            <div class="center griditens">
+                <h1>
+                    Sobre
+                </h1>
+                <p>
+                    Nascido em 2004 Rogerio sempre teve o sonho de trabalhar com tecnologia, apos algumas tentatibas falhas eles chegoou ate a desistir, porem algo mudaria sua vida
+                    <br><br><br><a class="botao" href="#">Saiba Mais  ></a>
+                </p>
+            </div>
+        </div>
+        <h1>{{index}}</h1>
+        {% for x in y %}
+            <p>{{x}}</p>
+        {% endfor %}
+        <!--Certificados-->
+        <div class="certificados marg0">
+            <div>
+                <div class="h1certificados">
+                    <h1>Certificados</h1>
+                    <p>Aqui estão todos os certificados já obtidos em qualquer instituição de ensino</p>
+                </div>
+                <div class="gridcerti">
+                    <div class="griditens">
+                        <img src="{% static  'assets/img/certificado1.jpg' %}" alt="Certificações" width="250" height="250"><br>
+                        <div><p class="p">Ensino Medio - 2022</p></div>
+                    </div>
+                    <div class="griditens">
+                        <img src="{% static  'assets/img/certificado2.jpg' %}" alt="Certificações" width="250" height="250"><br>
+                        <div><p class="p">Futuro Tecnico em informatica</p></div>
+                    </div>
+                    <div class="griditens">
+                        <img src="{% static  'assets/img/certificado3.jpg' %}" alt="Certificações" width="250" height="250"><br>
+                        <div><p class="p">Futuro Programador Python</p></div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!--Jornada-->
+        <div class="sobrej marg0">
+            <h1>Nossa Jornada</h1>
+            <div class="flexbox">
+                <div class="datas">
+                    <h1>2020</h1>
+                </div>
+                <div class="frases">
+                    <h1>Curso de Inglês</h1><br>
+                    <p>Curso de Inglês não finalizado</p>
+                </div>
+                <div class="datas">
+                    <h1>2022</h1>
+                </div>
+                <div class="frases">
+                    <h1>Ensino Medio</h1><br>
+                    <p>Finalização do ensino medio 2019-2022</p>
+                </div>
+                <div class="datas">
+                    <h1>2023</h1>
+                </div>
+                <div class="frases">
+                    <h1>Curso Tecnico TI</h1><br>
+                    <p>Curso tecnico 2023-</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!--Reflexão--> 
+        <div class="sobre">
+            <div class="reflexao">
+                <h1>A glória é tanto mais tardia quanto mais duradoura há de ser, porque todo fruto delicioso amadurece lentamente. Nas pessoas de capacidade limitada, a modéstia não passa de mera honestidade, mas em quem possui grande talento, é hipocrisia.</h1><br>
+                <h1 class="mencao">Arthur Schopenhauer</h1>
+            </div>
+        </div> 
+        <hr>
+        <!--Portifolio-->
+        <h1 class="sobrefc">Vamos trabalhar juntos</h1>
+        <div class="sobre gridfc marg0">
+            <div class="imgfc">
+                <img src="{% static  'assets/img/venhaconosco.jpg' %}" alt="Venha trabalhar Conosco" width="700" height="600">
+            </div>
+            <div class="textfc">
+                <div class="textfc">
+                    <h1>Instagram</h1>
+                    <a href="https://www.instagram.com/rogerio_awk/">Instagram</a>
+                </div>
+                <div class="textfc">
+                    <h1>Telefone</h1>
+                    <p>(32)99985-7785</p>
+                </div>
+                <div class="textfc">
+                    <h1>Linkedin</h1>
+                    <a href="https://www.linkedin.com/in/rogério-silva-3a899a239/">Linkedin</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        {% include 'partials/_footer.html' %}
+
+{% endblock %}
