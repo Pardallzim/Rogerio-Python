@@ -1,7 +1,10 @@
 from django.urls import path
-from turma.views import *
+from . import views
 
 urlpatterns = [
-    path('pagina/', index, name='index'),
-    path('',pagina,name='pagina')
+    path('pagina/', views.index, name='index'),
+    path('', views.pagina, name='pagina'),
+    path('variavel/', views.variavel, name='variavel'),
+    path('cadastro/', views.variavel, name='cadastro'),
+    path('itens/', views.itens, name='itens'),
 ]

@@ -1,0 +1,25 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block content %}
+
+<div>
+    <h1>Cadastrar Usuarios</h1>
+    <form action="{% url 'cadastro' %}" method="post">
+        {% csrf_token %}
+        {% for fields in form.visible_fields %}
+        <label>{{fields.label}}</label>
+        {{fields}}
+        {% endfor %}
+        <button class="btn btn-success" type="submit">Cadastrar</button>
+    </form>
+    <div>
+        {% for x in users %}
+        <strong>{{x.nome}}</strong>
+        <strong>{{x.email}}</strong>
+        <br>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% include 'partials/_footer.html' %}
