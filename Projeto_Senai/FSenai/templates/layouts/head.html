@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.css' %}">
+        <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+        <title>Senai</title>
+        <style>
+        .textdecoration{
+            text-decoration: none;
+            color: #f1f1f1;
+            font-size: 20px;
+            padding-right: 20px;
+        }
+        </style>
+    </head>
+    <body>
+        
+    {% block content %} 
+    {% endblock %}
+
+    </body>   
+</html>

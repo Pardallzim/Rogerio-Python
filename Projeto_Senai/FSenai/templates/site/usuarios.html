@@ -1,0 +1,22 @@
+{% extends 'layouts/head.html' %}
+{% load static %}
+{% block content %}
+        <!--Header-->
+            {% include 'partials/_header.html' %}
+        <!--Header-->
+        <div>
+            <h1>Cadastrar Usuarios</h1>
+            <form action="{% url 'usuarios' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% for fields in form.visible_fields %}
+                <label>{{fields.label}}</label>
+                {{fields}}
+                {% endfor %}
+                <button class="btn btn-success" type="submit">Cadastrar</button>
+            </form>
+        </div>
+        <!--Footer-->
+            {% include 'partials/_footer.html' %}
+        <!--Footer-->
+
+{% endblock %}
